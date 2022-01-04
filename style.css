@@ -23,6 +23,12 @@ img {
     max-width: 100%;
 }
 
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 50px auto;
+}
+
 /* -------------------- */
 /* REUSABLE STYLES */
 /* -------------------- */
@@ -43,6 +49,7 @@ img {
     height: 78px;
     position: relative;
     left: 220px;
+    bottom: 10px;
 }
 
 .activity {
@@ -149,3 +156,21 @@ h2 {
 /* ----- */
 
 .study { background: #F04667;}
+
+/* ----- */
+/* exercise */
+/* ----- */
+
+.exercise { background: #29BA66; }
+
+/* ----- */
+/* Social */
+/* ----- */
+
+.social { background: #7335D2;}
+
+/* ----- */
+/* Self Care */
+/* ----- */
+
+.self-care { background: #f1c75b;}
