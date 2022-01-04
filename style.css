@@ -23,6 +23,66 @@ img {
     max-width: 100%;
 }
 
+/* -------------------- */
+/* REUSABLE STYLES */
+/* -------------------- */
+
+.section-container {
+    max-width: 327px;
+    background: var(--dark-clr);
+    border-radius: 15px;
+    margin-top: -40px;
+    padding: .5em 2em;
+    position: relative;
+}
+
+.section-avatar {
+    filter: invert(0.20);
+    opacity: 0.2;
+    width: 78px;
+    height: 78px;
+    position: relative;
+    left: 220px;
+}
+
+.activity {
+    max-width: 327px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.title--ellipsis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.hours--last {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    align-items: center;
+}
+
+.ellipsis {
+    width: 21px;
+    height: 5px;
+}
+
+h2 { 
+    font-size: 18px;
+}
+
+.hours { 
+    font-size: 32px;
+    margin: 0;
+}
+
+.last,
+.ellipsis {
+    color: #bbc0ff;
+}
 /* ----- */
 /* Header */
 /* ----- */
@@ -33,7 +93,7 @@ img {
     border-radius: 15px;
 }
 
-.avatar {
+.main-avatar {
     width: 64px;
     height: 64px;
     border: 2px solid white;
@@ -70,3 +130,22 @@ img {
 .report-range p:hover {
     color: white;
 }
+
+/* ----- */
+/* Work */
+/* ----- */
+
+.work { background: #D96C47; }
+
+
+/* ----- */
+/* play */
+/* ----- */
+
+.play { background: #55c2e6; }
+
+/* ----- */
+/* play */
+/* ----- */
+
+.study { background: #F04667;}
