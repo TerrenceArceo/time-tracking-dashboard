@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --font-clr: #fff;
+    --bg-clr: #0e1323;
+    --dark-clr: #1c204b;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+body {
+    background: var(--bg-clr);
+    color: var(--font-clr);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ----- */
+/* Header */
+/* ----- */
+
+.hero {
+    max-width: 327px;
+    background: var(--dark-clr);
+    border-radius: 15px;
+}
+
+.avatar {
+    width: 64px;
+    height: 64px;
+    border: 2px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.identity {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    background: #5747ea;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 1.5em;
+}
+
+.report p {
+    margin-bottom: 0;
+}
+
+.name {
+    margin-top: 0;
+}
+
+.report-range {
+    display: flex;
+    justify-content: space-around;
+    padding: .5em;
+    color: #7078c9;;
+}
+
+.report-range p:active,
+.report-range p:hover {
+    color: white;
+}
