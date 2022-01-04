@@ -24,8 +24,8 @@ img {
 }
 
 .container {
-    max-width: 700px;
-    width: 80%;
+    max-width: 1100px;
+    width: 70%;
     margin: 50px auto;
 }
 
@@ -40,6 +40,10 @@ img {
     margin-top: -40px;
     padding: .5em 2em;
     position: relative;
+}
+
+.section-container:hover {
+    background: #33397a;
 }
 
 .section-avatar {
@@ -120,21 +124,29 @@ h2 {
 
 .report p {
     margin-bottom: 0;
+    color: #bbc0ff;
 }
 
 .name {
     margin-top: 0;
+    font-weight: lighter;
 }
 
 .report-range {
     display: flex;
-    justify-content: space-around;
-    padding: .5em;
-    color: #7078c9;;
+    justify-content: space-between;
+    padding: 1.5em;
 }
 
-.report-range p:active,
-.report-range p:hover {
+.btn {
+    border: none;
+    background: transparent;
+    color: #7078c9;
+    font-size: 18px;
+}
+
+.report-range button:active,
+.report-range button:hover {
     color: white;
 }
 
@@ -167,10 +179,70 @@ h2 {
 /* Social */
 /* ----- */
 
-.social { background: #7335D2;}
+.social { background: #7335D2; }
 
 /* ----- */
 /* Self Care */
 /* ----- */
 
-.self-care { background: #f1c75b;}
+.self-care { background: #f1c75b; }
+
+/* -------------- */
+/* Desktop Layout */
+/* -------------- */
+
+@media (min-width: 700px) {
+    main {
+        grid-template: 244px 244px / 255px 255px 255px 255px;
+        display: grid;
+        grid-template-areas: 
+            "hero activity-one activity-two activity-three"
+            "hero activity-four activity-five activity-six"
+        ;
+        gap: 2em;
+    }
+
+    .hero { 
+        grid-area: hero;
+        height: 518px;
+    }
+    .work { grid-area: activity-one;}
+    .play { grid-area: activity-two;}
+    .study { grid-area: activity-three;}
+    .exercise { grid-area: activity-four;}
+    .social { grid-area: activity-five;}
+    .self-care { grid-area: activity-six;}
+
+    .activity { margin-top: 0;}
+    .section-avatar { left: 160px;}
+
+    .identity { flex-direction: column;  height: 354px;}
+    .main-avatar { 
+        align-self: flex-start;
+        width: 78px;
+        height: 78px;
+    }
+    .name { 
+        font-size: 40px;
+        padding-bottom: .2em;
+    }
+    .report-range { 
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .btn + .btn {
+        margin-top: 20px;
+    }
+
+    .hours--last { 
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hours { 
+        font-size: 56px;
+        margin-top: .4em;
+    }
+}
