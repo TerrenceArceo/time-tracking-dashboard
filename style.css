@@ -146,8 +146,10 @@ h2 {
 }
 
 .report-range button:active,
-.report-range button:hover {
+.report-range button:hover,
+.report-range button:focus {
     color: white;
+    cursor: pointer;
 }
 
 /* ----- */
@@ -191,7 +193,13 @@ h2 {
 /* Desktop Layout */
 /* -------------- */
 
-@media (min-width: 700px) {
+@media (min-width: 1200px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
     main {
         grid-template: 244px 244px / 255px 255px 255px 255px;
         display: grid;

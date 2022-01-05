@@ -28,9 +28,9 @@
         </div>
       </div>
       <div class="report-range">
-        <button class="btn">Daily</button>
-        <button class="btn">Weekly</button>
-        <button class="btn">Monthly</button>
+        <button class="btn" id="btn-daily">Daily</button>
+        <button class="btn" id="btn-weekly">Weekly</button>
+        <button class="btn" id="btn-monthly">Monthly</button>
       </div>
     </section>
 
@@ -42,8 +42,8 @@
           <img src="images/icon-ellipsis.svg" class="ellipsis">
         </div>  
         <div class="hours--last">
-          <p class="hours">32hrs</p>
-          <p class="last">last week - 36hrs</p>
+          <p class="hours" id="work-hours"></p>
+          <p class="last"><span id="work-last">yesterday</span> - <span id="work-previous"></span></p>
         </div>
       </div>
     </section>
@@ -56,8 +56,8 @@
           <img src="images/icon-ellipsis.svg" class="ellipsis">
         </div>  
         <div class="hours--last">
-          <p class="hours">10hrs</p>
-          <p class="last">last week - 23hrs</p>
+          <p class="hours" id="play-hours"></p>
+          <p class="last"><span id="play-last">yesterday</span> - <span id="play-previous"></span></p>
         </div>
       </div>
     </section>
@@ -70,8 +70,8 @@
           <img src="images/icon-ellipsis.svg" class="ellipsis">
         </div>  
         <div class="hours--last">
-          <p class="hours">4hrs</p>
-          <p class="last">last week - 7hrs</p>
+          <p class="hours" id="study-hours"></p>
+          <p class="last"><span id="study-last">yesterday</span> - <span id="study-previous"></span></p>
         </div>
       </div>
     </section>
@@ -84,8 +84,8 @@
           <img src="images/icon-ellipsis.svg" class="ellipsis">
         </div>  
         <div class="hours--last">
-          <p class="hours">4hrs</p>
-          <p class="last">last week - 11hrs</p>
+          <p class="hours" id="exercise-hours"></p>
+          <p class="last"><span id="ex-last">yesterday</span> - <span id="exercise-previous"></span></p>
         </div>
       </div>
     </section>
@@ -98,8 +98,8 @@
           <img src="images/icon-ellipsis.svg" class="ellipsis">
         </div>  
         <div class="hours--last">
-          <p class="hours">3hrs</p>
-          <p class="last">last week - 12hrs</p>
+          <p class="hours" id="social-hours"></p>
+          <p class="last"><span id="social-last">yesterday</span> - <span id="social-previous"></span></p>
         </div>
       </div>
     </section>
@@ -112,11 +112,12 @@
           <img src="images/icon-ellipsis.svg" class="ellipsis">
         </div>  
         <div class="hours--last">
-          <p class="hours">2hrs</p>
-          <p class="last">last week - 2hrs</p>
+          <p class="hours" id="self-hours"></p>
+          <p class="last"><span id="self-last">yesterday</span> - <span id="self-previous"></span></p>
         </div>
       </div>
     </section>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
